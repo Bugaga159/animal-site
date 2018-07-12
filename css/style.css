@@ -264,23 +264,48 @@ li {
 }
 .profile__settings {
     width: 25%;
-    background: #69c8fb;
+    background: rgb(245, 238, 238);
     margin-left: 10px; 
     border-radius: 5px;
     
 }
+.profile__friends {
+    margin: 10px;
+    background: #69c8fb;
+    border-radius: 5px;
+}
+.profile__friends p {
+    padding: 5px;
+}
+.profile__friends ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 5px;
+
+}
 .setting__wrapper {
     margin: 10px;
+    background: #69c8fb;
+}
+.profile__friends li{
+    width: 25%;
+    font-size: 12px;
+    padding: 5px;
+}
+.profile__friends img {
+    height: 50px;
+    border-radius: 50%;
 }
 
 .profile__wall {
-    width: 55%; 
-    background: #69c8fb; 
+    width: 55%;  
     margin-left: 10px; 
     border-radius: 5px; 
     display: flex;
     flex-direction: column;
     padding: 10px; 
+    background: rgb(245, 238, 238);
 } 
 .user_menu_link:hover,
 .user_menu_link:focus {
@@ -307,6 +332,11 @@ li {
 .changes_profil:focus {
     background-color: #899ae4;
 }
+.wall__setting {
+    background: #69c8fb; 
+    border-radius: 5px;
+    padding: 10px;
+}
 
 .wall__setting ul {
     display: flex;
@@ -317,7 +347,7 @@ div#carousel {
     background: #97e4e4; 
     padding-top: 10%; 
     font-size:0; 
-    margin-bottom: 3rem; 
+    /* margin-bottom: 3rem;  */
     overflow: hidden; 
   }
   figure#spinner { 
@@ -355,12 +385,50 @@ div#carousel {
   div#carousel ~ span:hover { color: #888; cursor: pointer; }
 
 .wall__foto {
-    margin-top: 20px;
+    background: #69c8fb;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 10px;
 }
 
-
-
-
+.news {
+    margin-bottom: 10px;
+    background: #69c8fb;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 10px;
+}
+.news button {
+    padding: 9px 5px;
+    border: 0 solid;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #526ad5;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+.news a {
+    display: block;
+    float: right;
+    padding: 9px 5px;
+    border: 0 solid;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #526ad5;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+.news__date {
+    padding-top: 10px;
+}
+.news a:hover,
+.news a:focus,
+.news button:hover,
+.news button:focus {
+    opacity: 0.7;
+}
 
 
 /*-------------------------------------FOOTER-----------------------------------------*/
