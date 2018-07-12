@@ -25,7 +25,7 @@ a {
 li {
     list-style: none;
 }
-
+/*--------------------------------------------HEADER-------------------------------------------------*/
 .header {
     margin: 0;
     height: 42px;
@@ -57,7 +57,7 @@ li {
 .header__btn a:hover {
     background-color: #899ae4;
 }
-
+/*-------------------------------------MAIN INDEX----------------------------------------*/
 .main {
     display: flex;
     justify-content: center;
@@ -134,6 +134,75 @@ li {
     font-size: 20px;
 }
 
+/*-----------------------------------REGISTRATION PAGE--------------------------------*/
+.header__btn_back a {
+    display: block;
+    padding: 9px 45px ;
+    background-color: #526ad5;
+    color: blanchedalmond;
+    border-radius: 5px;
+}
+.registration__form {
+    display: flex;
+    justify-content: center;
+    min-height: 90vh;   
+}
+.registration__form .container {
+    display: flex;
+    justify-content: center;
+}
+.registration__form__wrapper {
+    width: 50%;
+}
+.registration__form__wrapper form {
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    margin-top: 50px;
+}
+.form-group {
+    width: 100%;
+}
+.form-group label{
+    display: block;
+    font-size: 16px;
+    color: #1e41dc;
+    margin-top: 10px;
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+}
+.form-group input {
+    width: 100%;
+    border-radius: 5px;
+    padding: 9px 0;
+    border: 0 solid;
+    margin-top: 10px;
+    text-align: left;
+    padding-left: 20px;
+}
+.registration__form__wrapper button {
+ 
+ padding: 9px 0;
+ border: 0 solid;
+ border-radius: 5px;
+ margin-top: 10px;
+ background-color: #526ad5;
+ color: #fff;
+ font-size: 16px;
+ font-weight: bold;
+}
+.registration__form__wrapper button:hover,
+.registration__form__wrapper button:focus {
+    background-color: #899ae4;
+}
+
+
+
+
+
+
+/*-------------------------------------FOOTER-----------------------------------------*/
 .footer {
     margin: 0;
     height: 42px;
