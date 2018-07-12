@@ -14,6 +14,7 @@ body {
     background-image: url(../img/main-page.jpg);
     background-position: top center;
     background-repeat: no-repeat;
+    background-attachment:fixed;
     -moz-background-size: 100%; /* Firefox 3.6+ */
     -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
     -o-background-size: 100%; /* Opera 9.6+ */
@@ -30,7 +31,7 @@ li {
     margin: 0;
     height: 42px;
     background-color: #69c8fb;
-
+    background-attachment:fixed;
     display: flex;
     justify-content: center;
 }
@@ -141,6 +142,10 @@ li {
     background-color: #526ad5;
     color: blanchedalmond;
     border-radius: 5px;
+}
+.header__btn_back a:hover,
+.header__btn_back a:focus {
+    opacity: 0.7;
 }
 .registration__form {
     display: flex;
@@ -306,6 +311,7 @@ li {
     flex-direction: column;
     padding: 10px; 
     background: rgb(245, 238, 238);
+    margin-bottom: 10px;
 } 
 .user_menu_link:hover,
 .user_menu_link:focus {
@@ -431,12 +437,51 @@ div#carousel {
 }
 
 
+
+/*--------------------------------------MESSAGES--------------------------------------*/
+
+.main__messages {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background: #69c8fb;
+    border-radius: 5px;
+    padding: 10px;
+    width: 80%;
+}
+.messages__search input {
+    padding: 5px 5px;
+    height: 30px;
+    width: 70%;
+    padding-left: 10px;
+    border: 0 solid;
+    border-radius: 5px;
+    
+}
+.messages__search button {
+    padding: 9px 5px;
+    border: 0 solid;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #526ad5;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    width: 25%;
+}
+.messages__search button:hover,
+.messages__search button:focus {
+    opacity: 0.7;
+}
+
+
+
+
 /*-------------------------------------FOOTER-----------------------------------------*/
 .footer {
     margin: 0;
     height: 42px;
     background-color: #69c8fb;
-
+    background-attachment:fixed;
     display: flex;
     justify-content: center;
     
