@@ -36,7 +36,7 @@ li {
 }
 .container {
     width: 960px;
-    float: center;
+    margin: 0 auto;
 }
 
 .header__nav {
@@ -233,6 +233,55 @@ li {
 .about__company .container img {
     width: 30%;
     height: 100%;
+}
+
+/*-------------------------------------PROFILE----------------------------------------*/
+
+.main__profile {
+    min-height: 90vh;
+}
+
+.main__profile .container {
+    margin-top: 20px;
+}
+.main__profile__wrapper {
+    display: flex;
+}
+.main__profile__wrapper nav {
+    color: #fff;
+    background: #69c8fb; 
+    width: 20%;
+    border-radius: 5px;
+    
+}
+.user_menu a{
+    display: block;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #fff;
+}
+.profile__settings {
+    width: 25%;
+    background: #69c8fb;
+    margin-left: 10px; 
+    border-radius: 5px;
+}
+.profile__wall {
+    width: 55%; 
+    background: #69c8fb; 
+    margin-left: 10px; 
+    border-radius: 5px;  
+} 
+.user_menu_link:hover,
+.user_menu_link:focus {
+    background-color: #0691dc;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.profile__settings img {
+    width: 80%;
 }
 
 
