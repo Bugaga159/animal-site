@@ -435,6 +435,92 @@ div#carousel {
 .news button:focus {
     opacity: 0.7;
 }
+/*-------------------------------------FRIENDS PAGE-----------------------------------*/
+
+.friends {
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 80%;
+    margin-left: 10px;
+    background: rgb(245, 238, 238);
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+}
+
+.friends__list ul {
+    display: flex;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+    margin: 10px;
+    border: 1px solid;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+}
+.friends__list li {
+    width: 25%;
+    padding-left: 10px;
+    margin-left: 15px;
+    
+}
+.friends__list img {
+    padding-top: 5px;
+    height: 70px;
+    width: 70px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+}
+.friends__list a{
+    display: block;
+    
+}
+
+.friend__message {
+    padding: 7px 5px;
+    border: 0 solid;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #526ad5;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.friend__name {
+    margin-top: 17px;
+    font-size: 24px;
+    color: #000;
+}
+.friends__list ul:hover,
+.friends__list ul:focus {
+    background: #69c8fb;
+}
+.friend__message:hover,
+.friend__message:focus {
+    opacity: 0.7;
+}
+
+/*-------------------------------------IMAGE USER-------------------------------------*/
+
+.main__image {
+    width: 80%;
+    margin-left: 30px;
+    background-color: #fff;
+ }
+ .image__user {
+    display: flex;
+    -webkit-justify-content: center;
+            justify-content: center;
+    margin-top: 10px;
+ }      
+
+#collage{ width: 600px;}
+#collage img{ display: block; float: left;}
+.clear{ *zoom: 1;}
+.clear:before,
+.clear:after { display: table; content: ""; line-height: 0;}
+.clear:after { clear: both;}
 
 
 
