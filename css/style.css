@@ -580,6 +580,30 @@ div#carousel {
     width: 80%;
     font-size: 16px;
 }
+.message__list:hover,
+.message__list:focus {
+    background-color: #fff;
+}
+
+
+/*-------------------------------------NEWS PROFILE-----------------------------------*/
+.news__profile {
+    margin-top: 0;
+    margin-left: 10px;
+}
+
+.news__profile .news {
+    margin-top: 0;
+}
+.news__profile h1 {
+    padding:5px 10px;
+}
+.news__profile p {
+    padding:5px 10px;
+}
+.news__profile img {
+    width: 200px;
+}
 
 
 /*-------------------------------------FOOTER-----------------------------------------*/
