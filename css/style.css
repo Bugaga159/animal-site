@@ -605,6 +605,45 @@ div#carousel {
     width: 200px;
 }
 
+/*-------------------------------CHANGES PROFILE--------------------------------------*/
+
+.main__changes {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background: #69c8fb;
+    border-radius: 5px;
+    padding: 10px;
+    width: 80%;
+}
+.change__list {
+    display: flex;
+    justify-content: space-around;
+}
+.change__list form {
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+
+
+
+.change__list button {
+ 
+ padding: 9px 0;
+ border: 0 solid;
+ border-radius: 5px;
+ margin-top: 10px;
+ background-color: #526ad5;
+ color: #fff;
+ font-size: 16px;
+ font-weight: bold;
+ width: 45%;
+}
+.change__list button:hover,
+.change__list button:focus {
+    background-color: #899ae4;
+}
+
 
 /*-------------------------------------FOOTER-----------------------------------------*/
 .footer {
