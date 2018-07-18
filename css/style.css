@@ -233,6 +233,9 @@ main nav {
     justify-content: center;
     
 }
+.about__company .container {
+    margin-top: 40px;
+}
 .row {
     display: flex;
     flex-direction: column;

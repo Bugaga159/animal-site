@@ -1,41 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta http-equiv="Cache-Control" content="no-cache">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Flaffyland</title>
-    
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header class="header">
-        <div class="container">
-            <div class="header__nav">
-                <div class="header__logo">
-                    <a href="index.html"><img src="img/logo-bg.png" alt="HOME" height=42 ></a>
-                </div>
-                <div class="header__btn_back">
-                    <a href="index.html" class="btn btn-success">Выход</a>
-                </div>
-            </div>
-        </div>
-    </header>
+<?php
+
+$btn = ['index','Выход']; // Для кнопки в header
+
+// подключение header
+require_once 'templates/header.php';
+
+echo '
+
     <main class="main__profile">
         <div class="container">
-            <div class="main__profile__wrapper">
-                <nav>
-                    <ul class="user_menu">
-                        <li><a class="user_menu_link " href="profile.html"><p class="user_menu_text" href="#">Главная</p></a></li>
-                        <li><a class="user_menu_link" href="messages.html"><p class="user_menu_text" href="#">Сообщения</p></a></li>
-                        <li><a class="user_menu_link" href="friends.html"><p class="user_menu_text" href="#">Друзья</p></a></li>
-                        <li><a class="user_menu_link" href="image_user.html"><p class="user_menu_text" href="#">Фото</p></a></li>
-                        <li><a class="user_menu_link" href="news_profile.html"><p class="user_menu_text" href="#">Новости</p></a></li>
-                        <li><a class="user_menu_link" href="changes_profile.html"><p class="user_menu_text" href="#">Изменить</p></a></li>
-                        <li><a class="user_menu_link" href="group_profile.html"><p class="user_menu_text" href="#">Группы</p></a></li>
-                    </ul>
-                </nav>
+            <div class="main__profile__wrapper">';
+            
+require_once 'templates/nav.php'; // подключение nav
+
+echo '               
                 <section class="profile__settings">
                     <div class="setting__wrapper">
                         <a href="">
@@ -101,8 +79,8 @@
                                 <img src="img/pets_avatar/2.jpg" alt>
                             </figure>
                         </div>
-                        <span style="float:left" class="ss-icon" onclick="galleryspin('-')">&lt;</span>
-                        <span style="float:right" class="ss-icon" onclick="galleryspin('')">&gt;</span>
+                        <span style="float:left" class="ss-icon" onclick="galleryspin(\'-\')">&lt;</span>
+                        <span style="float:right" class="ss-icon" onclick="galleryspin(\'\')">&gt;</span>
                     </section>
                     <section class="wall__news">
                         <div class="news">
@@ -160,16 +138,6 @@
                 </section>
             </div>
         </div> 
-    </main>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__nav">
-                <a class="footer__link" href="about company.html">Наша идея</a>
-                <a class="footer__link" href="#">Конфиденциальность</a>
-                <a class="footer__link" href="#">Поддержка</a>
-            </div>            
-        </div>
-    </footer>
-    <script src="js/setting.js"></script>
-</body>
-</html>
+    </main>';
+
+    require_once 'templates/footer.php'; // подключение footer

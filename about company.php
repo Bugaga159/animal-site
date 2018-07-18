@@ -1,26 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta http-equiv="Cache-Control" content="no-cache">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Flaffyland</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header class="header">
-        <div class="container">
-            <div class="header__nav">
-                <div class="header__logo">
-                    <a href="index.html"><img src="img/logo-bg.png" alt="HOME" height=42 ></a>
-                </div>
-                <div class="header__btn_back">
-                    <a href="index.html" class="btn btn-success">Назад</a>
-                </div>
-            </div>
-        </div>
-    </header>
+<?php
+
+$btn = ['index','Выход']; // Для кнопки в header
+
+require_once 'templates/header.php';
+echo '
+
+
+
     <section class="about__company">
         <div class="container">
             <div class="row">
@@ -44,14 +30,6 @@
             </div>
         </div>
     </section>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__nav">            
-                <a class="footer__link" href="about company.html">Наша идея</a>
-                <a class="footer__link" href="#">Конфиденциальность</a>
-                <a class="footer__link" href="#">Поддержка</a>
-            </div>            
-        </div>
-    </footer>
-</body>
-</html>
+';
+require_once 'templates/footer.php';
+    
