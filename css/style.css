@@ -5,20 +5,28 @@
 body {
     margin: 0;
     padding: 0;
-    height: 100px;
+    /* height: 100%; */
     font-family: "PT Sans Narrow", Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
     font-weight: 700;
 
     background-image: url(../img/main-page.jpg);
-    background-position: top center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-attachment:fixed;
+    background-size: cover;
+    background-color: #464646;
     -moz-background-size: 100%; /* Firefox 3.6+ */
     -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
     -o-background-size: 100%; /* Opera 9.6+ */
     background-size: 100%; /* Современные браузеры */
+
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* высота веб-страницы больше или равна высоте окна браузера */
+    /* margin: 0; */
 }
 a {
     text-decoration: none;
@@ -34,6 +42,9 @@ li {
     background-attachment:fixed;
     display: flex;
     justify-content: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 .container {
     width: 960px;
@@ -59,12 +70,26 @@ li {
     background-color: #899ae4;
 }
 /*-------------------------------------MAIN INDEX----------------------------------------*/
-.main {
+main {
+    flex: 1; /* если содержимое body меньше высоты окна, то main будет растянут до нужной величины */
+    
+    -ms-flex-preferred-size: auto;
     display: flex;
     justify-content: center;
     /* background-color: #ebebeb; */
-    min-height: 90vh;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    
 }
+main nav {
+    width: 20%;
+}
+
+/* main .container {
+    overflow: auto;
+    min-height: 90vh;
+
+} */
 .main__wrapper {
     display: flex;
     margin-top: 20px;
@@ -150,7 +175,7 @@ li {
 .registration__form {
     display: flex;
     justify-content: center;
-    min-height: 90vh;   
+    
 }
 .registration__form .container {
     display: flex;
@@ -206,7 +231,7 @@ li {
 .about__company {
     display: flex;
     justify-content: center;
-    min-height: 90vh; 
+    
 }
 .row {
     display: flex;
@@ -242,9 +267,7 @@ li {
 
 /*-------------------------------------PROFILE----------------------------------------*/
 
-.main__profile {
-    min-height: 90vh;
-}
+
 
 .main__profile .container {
     margin-top: 20px;
@@ -590,6 +613,7 @@ div#carousel {
 .news__profile {
     margin-top: 0;
     margin-left: 10px;
+    width: 80%;
 }
 
 .news__profile .news {
@@ -624,9 +648,6 @@ div#carousel {
     margin-bottom: 20px;
 }
 
-
-
-
 .change__list button {
  
  padding: 9px 0;
@@ -653,12 +674,14 @@ div#carousel {
     background-attachment:fixed;
     display: flex;
     justify-content: center;
-    
+    width: 100%;
+    position: fixed;
+    bottom: 0;
 }
+
 .footer__nav {
     display: flex;
-    justify-content: center;
-    
+    justify-content: center;   
 }
 .footer__nav a{
     color: #fff;
