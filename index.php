@@ -1,6 +1,7 @@
 <?php
 
 
+
 $btn = ['registration','Регистрация'];// Для кнопки в header
 
 

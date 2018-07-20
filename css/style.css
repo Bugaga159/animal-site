@@ -159,7 +159,17 @@ main nav {
     margin-top: 30px;
     font-size: 20px;
 }
-
+.error {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.error img {
+    width: 250px;
+    margin-bottom: 30px;
+}
 /*-----------------------------------REGISTRATION PAGE--------------------------------*/
 .header__btn_back a {
     display: block;

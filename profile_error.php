@@ -24,7 +24,7 @@ require_once 'templates/header.php';
         <div class="container">
             <div class="registration__form__wrapper">
 
-               <div>
+               <div class="error">
                     <h1>Нам очень жаль...</h1>
                     <img src="img/error.png" class="error" alt="">
                     <p>  ... но произошел небольшой сбой. Вероятно,<span class="error_message"><?php echo $error_message; ?></span></p>
@@ -37,7 +37,7 @@ require_once 'templates/header.php';
                     <?php
                     echo "<p>Было получено следующее сообщение об ошибке системного уровня: <b>{$system_error_message}</b></p>";
                     ?>
-                    <div style="text-align: center;"><strong><a  href="/index.php">Главная станица</a></strong></div>
+                    
                 </div>
             </div>
         </div>
