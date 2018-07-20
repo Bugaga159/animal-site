@@ -1,5 +1,6 @@
 <?php
 
+
 $btn = ['registration','Регистрация'];// Для кнопки в header
 
 require_once 'templates/header.php';
@@ -11,7 +12,7 @@ echo '
 <div class="container">
     <div class="main__wrapper">
         <section class="main__registration">
-            <form action="" method="POST" class="main__form">
+            <form action="script/authController.php" method="POST" class="main__form">
                 <li>
                     <ul><label for="login">Введите логин или почту</label></ul>
                     <ul><input id="login" name="login" type="text" placeholder="Логин"></ul>

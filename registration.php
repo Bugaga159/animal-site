@@ -1,15 +1,79 @@
 <?php
 
+include_once "config/connect.php";
+
+
+if(isset($_POST['do_signup'])){
+
+    // Проверка на ошибки в регистрации
+    $errors = [];
+    if (trim($_POST['login']) == '') {
+        $errors[] = 'Введите Логин!';
+    }
+    if (trim($_POST['first_name']) == '') {
+        $errors[] = 'Введите Имя!';
+    }
+    if (trim($_POST['last_name']) == '') {
+        $errors[] = 'Введите Фамилию!';
+    }
+    if (trim($_POST['email']) == '') {
+        $errors[] = 'Введите Email!';
+    }
+    if ($_POST['password'] == '') {
+        $errors[] = 'Введите Пароль!';
+    }
+    if ($_POST['password_2'] != $_POST['password'] ) {
+        $errors[] = 'Повторно введенный пароль не верно!';
+    }
+    
+    
+    // Проверка на отсутствие ошибок
+    if (empty($errors)) {
+        
+        /*ini_set("display_errors",1);
+        error_reporting(E_ALL);*/
+
+    // Получение данных
+    
+        $login = htmlentities(mysqli_real_escape_string($link, $_POST['login']));
+        $first_name = htmlentities(mysqli_real_escape_string( $link, $_POST['first_name']));
+        $last_name = htmlentities(mysqli_real_escape_string($link, $_POST['last_name']));
+        $email = htmlentities(mysqli_real_escape_string($link, $_POST['email']));
+        $pass = password_hash( htmlentities(mysqli_real_escape_string($link, $_POST['password'])), PASSWORD_DEFAULT);
+
+        $insert_sql = "INSERT INTO users VALUES ( NULL, '{$login}', '{$first_name}', '{$last_name}', '{$email}', '{$pass}',NULL , NULL)";
+        $result = mysqli_query($link, $insert_sql ) or die(mysqli_errno());
+
+        header('Location: profile.php?user_id=' . mysqli_insert_id($link));
+
+        exit();
+        
+
+    }else{
+
+        $errors_all = '<div style ="color: red; text-align: center;">' . array_shift($errors).'</div><hr>';
+
+    }
+ }
+
+
 $btn = ['index','Выход']; // Для кнопки в header
 
 // подключение header
 require_once 'templates/header.php';
 
-echo '
+?>
     <section class="registration__form">
         <div class="container">
             <div class="registration__form__wrapper">
-                <form action="" method="POST">
+
+                <form  method="POST">
+
+
+                <?php // Вывод в случае ошибки
+                    echo $errors_all;
+                
+		        ?>
                     <div class="form-group first_name">
                         <p><label for="login">Логин:</label></p>
                         <input type="text" name = "login" class="form-control login" placeholder="Введите Логин" >                         
@@ -40,6 +104,8 @@ echo '
             </div>
         </div>
     </section>
-    ';
-
+   
+<?php
     require_once 'templates/footer.php'; // подключение footer
+
+    ?>

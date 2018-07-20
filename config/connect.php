@@ -8,7 +8,3 @@ $link = mysqli_connect($host, $user, $password, $database)
 
 
 
-
-    // закрываем подключение
-mysqli_close($link);
-?>
