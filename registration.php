@@ -27,8 +27,6 @@ if(isset($_POST['do_signup'])){
     }
     
     
-    // Проверка на отсутствие ошибок
-    if (empty($errors)) {
         
         /*ini_set("display_errors",1);
         error_reporting(E_ALL);*/
@@ -41,6 +39,23 @@ if(isset($_POST['do_signup'])){
         $email = htmlentities(mysqli_real_escape_string($link, $_POST['email']));
         $pass = password_hash( htmlentities(mysqli_real_escape_string($link, $_POST['password'])), PASSWORD_DEFAULT);
 
+    //Проверка Логин на писутствие в БД
+        $log_conrt = "SELECT id FROM `users` WHERE login LIKE '{$login}'";
+
+        $res_contr = mysqli_query($link,$log_conrt );
+        foreach($res_contr as $res){
+            if($res > 0){
+                $errors[] = "Логин уже занят!";
+            }
+        }
+            
+            
+        
+
+    // Проверка на отсутствие ошибок
+        if (empty($errors)) {
+
+    //Регистрация данных в БД
         $insert_sql = "INSERT INTO users VALUES ( NULL, '{$login}', '{$first_name}', '{$last_name}', '{$email}', '{$pass}',NULL , NULL)";
         $result = mysqli_query($link, $insert_sql ) or die(mysqli_errno());
 
