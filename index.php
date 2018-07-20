@@ -22,7 +22,7 @@ require_once 'templates/header.php';
                     <ul><input id="password" name="password" type="password" placeholder="Пароль"></ul>
                     <ul><button>Войти</button></ul>
                     <ul><a href="registration.php">Регистрация</a></ul>
-                    <ul><a href="profile.php">Для проверки</a></ul>
+                    
                 </li>
             </form>
         </section>
