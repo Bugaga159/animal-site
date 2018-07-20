@@ -27,9 +27,6 @@ if(isset($_POST['do_signup'])){
     }
     
     
-        
-        /*ini_set("display_errors",1);
-        error_reporting(E_ALL);*/
 
     // Получение данных
     
@@ -59,7 +56,7 @@ if(isset($_POST['do_signup'])){
         $insert_sql = "INSERT INTO users VALUES ( NULL, '{$login}', '{$first_name}', '{$last_name}', '{$email}', '{$pass}',NULL , NULL)";
         $result = mysqli_query($link, $insert_sql ) or die(mysqli_errno());
 
-        header('Location: profile.php?user_id=' . mysqli_insert_id($link));
+        header('Location: profile.php?id=' . mysqli_insert_id($link));
 
         exit();
         

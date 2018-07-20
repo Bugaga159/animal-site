@@ -2,6 +2,31 @@
 
 $btn = ['index','Выход']; // Для кнопки в header
 
+
+    include_once "config/connect.php";//Подключение к БД
+
+    $user_id = $_REQUEST['id'];
+    $select_query = "SELECT * FROM `users` WHERE  id = '{$user_id}'";
+    $result = mysqli_query($link, $select_query);
+    if(!$result){
+       
+        $user_error_message = "возникла проблема, связанная с подключением " .
+            "к базе данных, содержащей нужную информацию.";
+        $system_error_message = mysqli_error($link);
+        header("Location: profile_error.php?error_message={$user_error_message}&system_error_message={$system_error_message}");
+    exit();
+
+
+    } else{
+        
+
+        $row =mysqli_fetch_array($result);
+        $first_name = $row['first_name'];
+        $last_name = $row['last_name'];
+    }
+
+
+
 // подключение header
 require_once 'templates/header.php';
 
@@ -13,7 +38,7 @@ echo '
             
 require_once 'templates/nav.php'; // подключение nav
 
-echo '               
+?>              
                 <section class="profile__settings">
                     <div class="setting__wrapper">
                         <a href="">
@@ -24,7 +49,7 @@ echo '
                         </div>
                     </div>
                     <div class="profile__friends">
-                        <p>Друзья Панина Андрея:</p>
+                        <p>Друзья <?php echo $last_name . " " . $first_name?>:</p>
                         <ul>
                             <li>
                                 <a href="#"><img src="img/avatars/ava-i.jpg" alt="">
@@ -56,7 +81,7 @@ echo '
                 <section class="profile__wall">
                     <section class="wall__setting">
                         <ul>
-                            <li>Андрей Панин</li>
+                            <li><?php echo $first_name . " " . $last_name?></li>
                             <li>Online</li>
                         </ul>
                         <hr>
@@ -138,6 +163,10 @@ echo '
                 </section>
             </div>
         </div> 
-    </main>';
+    </main>
+
+
+
+    <?php
 
     require_once 'templates/footer.php'; // подключение footer

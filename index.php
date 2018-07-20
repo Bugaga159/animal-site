@@ -3,11 +3,12 @@
 
 $btn = ['registration','Регистрация'];// Для кнопки в header
 
+
 require_once 'templates/header.php';
 
+?>
 
 
-echo '
 <main class="main">
 <div class="container">
     <div class="main__wrapper">
@@ -33,6 +34,7 @@ echo '
     </div>
 </div>
 </main>
-';
+
+<?php
 
 require_once 'templates/footer.php';
