@@ -644,6 +644,7 @@ div#carousel {
     display: flex;
     border: #000 solid;
     border-radius: 5px;
+    width: 95%;
     
 }
 .message__list a {
@@ -665,7 +666,22 @@ div#carousel {
 .message__list:focus {
     background-color: #fff;
 }
-
+.btn__back {
+    display: block;
+    margin: 5px;
+    padding: 5px 10px;
+    list-style: none;
+    background-color: #526ad5;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 95%;
+    margin-left: 0;
+}
+.message__list h3{
+    margin-left: 5px;
+}
 
 /*-------------------------------------NEWS PROFILE-----------------------------------*/
 .news__profile {
@@ -723,6 +739,81 @@ div#carousel {
     background-color: #899ae4;
 }
 
+/*---------------------------------------GROUP PAGE ----------------------------------*/
+.group {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background: #69c8fb;
+    border-radius: 5px;
+    padding: 10px;
+    width: 80%;
+}
+.crop{
+	float:none;
+	margin:.5em 10px .5em 0;
+	overflow:hidden; /* this is important */
+	margin: auto 0;
+	}
+	/* input values to crop the image: top, right, bottom, left */
+.crop img{
+    width: 100%;
+    margin: -140px 0px -60px;
+}
+.group__nav nav {
+    width: 100%;
+    margin: 10px 0;
+}
+.group__nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.group__nav li {
+    width: 45%;
+}
+.group__nav img {
+    margin-right: 60px;
+    margin-top: -55px;
+    float: right;
+    height: 120px;
+    border-radius: 100px;
+}
+.group__name{
+    font-size: 26px;
+    margin-left: 15px;
+}
+.group__mess a {
+    display: block;
+    padding: 9px 0;
+    border: 0 solid;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #526ad5;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.group__item ul {
+    display: flex;
+    justify-content: space-around;
+    
+}
+.group__item a {
+    display: block;
+    width: 100%;
+    list-style: none;
+    color: #000;
+    background: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.group__item a:hover,
+.group__item a:focus {
+    background-color: #899ae4;
+}
 
 /*-------------------------------------FOOTER-----------------------------------------*/
 .footer {

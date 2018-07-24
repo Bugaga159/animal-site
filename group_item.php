@@ -20,12 +20,12 @@ echo '
                 	<div class="friends__list">
                 		<ul>
                 			<li>
-                				<a href="">
+                				<a href="group.php">
                 					<img src="img/pets_avatar/1.jpg" alt="avatar">
                 				</a>
                 			</li>
                 			<li>
-                				<a class="friend__name" href="">Лечение птиц</a>
+                				<a class="friend__name" href="group.php">Лечение птиц</a>
                 			</li>
                 			<li>
                 				<a class="friend__message" href="">Вступить в группу</a>
@@ -36,12 +36,12 @@ echo '
                 	<div class="friends__list">
 						<ul>
 							<li>
-								<a href="">
+								<a href="group.php">
 									<img src="img/pets_avatar/3.jpg" alt="avatar">
 								</a>
 							</li>
 							<li>
-								<a class="friend__name" href="">Все про собак</a>
+								<a class="friend__name" href="group.php">Все про собак</a>
 							</li>
 							<li>
 								<a class="friend__message" href="">Вступить в группу</a>
@@ -52,12 +52,12 @@ echo '
 					<div class="friends__list">
 							<ul>
 								<li>
-									<a href="">
+									<a href="group.php">
 										<img src="img/pets_avatar/2.jpg" alt="avatar">
 									</a>
 								</li>
 								<li>
-									<a class="friend__name" href="">Клуб любителей кошек</a>
+									<a class="friend__name" href="group.php">Клуб любителей кошек</a>
 								</li>
 								<li>
 									<a class="friend__message" href="">Вступить в группу</a>
@@ -68,12 +68,12 @@ echo '
 					<div class="friends__list">
 						<ul>
 							<li>
-								<a href="">
+								<a href="group.php">
 									<img src="img/avatars/ava-i.jpg" alt="avatar">
 								</a>
 							</li>
 							<li>
-								<a class="friend__name" href="">Лечение собак</a>
+								<a class="friend__name" href="group.php">Лечение собак</a>
 							</li>
 							<li>
 								<a class="friend__message" href="">Вступить в группу</a>
@@ -84,12 +84,12 @@ echo '
 					<div class="friends__list">
 						<ul>
 							<li>
-								<a href="">
+								<a href="group.php">
 									<img src="img/about-2.jpg" alt="avatar">
 								</a>
 							</li>
 							<li>
-								<a class="friend__name" href="">Встречи милых котят</a>
+								<a class="friend__name" href="group.php">Встречи милых котят</a>
 							</li>
 							<li>
 								<a class="friend__message" href="">Вступить в группу</a>
@@ -100,12 +100,12 @@ echo '
 					<div class="friends__list">
 							<ul>
 								<li>
-									<a href="">
+									<a href="group.php">
 										<img src="img/about-1.jpg" alt="avatar">
 									</a>
 								</li>
 								<li>
-									<a class="friend__name" href="">Одежда для любимых</a>
+									<a class="friend__name" href="group.php">Одежда для любимых</a>
 								</li>
 								<li>
 									<a class="friend__message" href="">Вступить в группу</a>

@@ -25,7 +25,7 @@ echo '
                 				<a class="friend__name" href="">Панин Андрей</a>
                 			</li>
                 			<li>
-                				<a class="friend__message" href="">Написать сообщение</a>
+                				<a class="friend__message" href="mess_send.php">Написать сообщение</a>
                 			</li>
                 			<li>
                 				<a class="friend__message" href="">Статус пользователя</a>
@@ -43,7 +43,7 @@ echo '
                 				<a class="friend__name" href="">Панина Мария</a>
                 			</li>
                 			<li>
-                				<a class="friend__message" href="">Написать сообщение</a>
+                				<a class="friend__message" href="mess_send.php">Написать сообщение</a>
                 			</li>
                 			<li>
                 				<a class="friend__message" href="">Статус пользователя</a>
@@ -61,7 +61,7 @@ echo '
                 				<a class="friend__name" href="">Денискин Роман</a>
                 			</li>
                 			<li>
-                				<a class="friend__message" href="">Написать сообщение</a>
+                				<a class="friend__message" href="mess_send.php">Написать сообщение</a>
                 			</li>
                 			<li>
                 				<a class="friend__message" href="">Статус пользователя</a>
@@ -79,7 +79,7 @@ echo '
                 				<a class="friend__name" href="">Пупкин Артем</a>
                 			</li>
                 			<li>
-                				<a class="friend__message" href="">Написать сообщение</a>
+                				<a class="friend__message" href="mess_send.php">Написать сообщение</a>
                 			</li>
                 			<li>
                 				<a class="friend__message" href="">Статус пользователя</a>
@@ -97,7 +97,7 @@ echo '
                 				<a class="friend__name" href="">Пузикова Ольга</a>
                 			</li>
                 			<li>
-                				<a class="friend__message" href="">Написать сообщение</a>
+                				<a class="friend__message" href="mess_send.php">Написать сообщение</a>
                 			</li>
                 			<li>
                 				<a class="friend__message" href="">Статус пользователя</a>
@@ -115,7 +115,7 @@ echo '
                 				<a class="friend__name" href="">Панин Андрей</a>
                 			</li>
                 			<li>
-                				<a class="friend__message" href="">Написать сообщение</a>
+                				<a class="friend__message" href="mess_send.php">Написать сообщение</a>
                 			</li>
                 			<li>
                 				<a class="friend__message" href="">Статус пользователя</a>
@@ -133,7 +133,7 @@ echo '
                 				<a class="friend__name" href="">Панин Андрей</a>
                 			</li>
                 			<li>
-                				<a class="friend__message" href="">Написать сообщение</a>
+                				<a class="friend__message" href="mess_send.php">Написать сообщение</a>
                 			</li>
                 			<li>
                 				<a class="friend__message" href="">Статус пользователя</a>
@@ -151,7 +151,7 @@ echo '
                 				<a class="friend__name" href="">Панин Андрей</a>
                 			</li>
                 			<li>
-                				<a class="friend__message" href="">Написать сообщение</a>
+                				<a class="friend__message" href="mess_send.php">Написать сообщение</a>
                 			</li>
                 			<li>
                 				<a class="friend__message" href="">Статус пользователя</a>
@@ -169,7 +169,7 @@ echo '
                 				<a class="friend__name" href="">Панин Андрей</a>
                 			</li>
                 			<li>
-                				<a class="friend__message" href="">Написать сообщение</a>
+                				<a class="friend__message" href="mess_send.php">Написать сообщение</a>
                 			</li>
                 			<li>
                 				<a class="friend__message" href="">Статус пользователя</a>
@@ -187,7 +187,7 @@ echo '
                 				<a class="friend__name" href="">Панин Андрей</a>
                 			</li>
                 			<li>
-                				<a class="friend__message" href="">Написать сообщение</a>
+                				<a class="friend__message" href="mess_send.php">Написать сообщение</a>
                 			</li>
                 			<li>
                 				<a class="friend__message" href="">Статус пользователя</a>

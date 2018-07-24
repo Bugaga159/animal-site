@@ -24,26 +24,26 @@ echo '
                     </div>
                     <div class="message">
                         <div class="message__list">
-                            <a href="#"><img src="img/avatars/roma.jpg" alt="avatars"></a>
+                            <a href="mess_send.php"><img src="img/avatars/roma.jpg" alt="avatars"></a>
                             <p>
-                                <a href="">Новых Сообщений - нет</a>
+                                <a href="mess_send.php">Новых Сообщений - нет</a>
                             </p>
                         </div>
                         <div class="message__list">
-                                <a href="#"><img src="img/avatars/masha.jpg" alt="avatars"></a>
+                                <a href="mess_send.php"><img src="img/avatars/masha.jpg" alt="avatars"></a>
                                 <p>
-                                    <a href="">Новое Сообщение - 1 !</a>
+                                    <a href="mess_send.php">Новое Сообщение - 1 !</a>
                                 </p>
                         </div>
                         <div class="message__list">
-                                <a href="#"><img src="img/avatars/no_avatar.gif" alt="avatars"></a>
+                                <a href="mess_send.php"><img src="img/avatars/no_avatar.gif" alt="avatars"></a>
                                 <p>
-                                    <a href="">Новых Сообщений - нет</a>
+                                    <a href="mess_send.php">Новых Сообщений - нет</a>
                                 </p>
                         </div><div class="message__list">
-                                <a href="#"><img src="img/avatars/ava-i.jpg" alt="avatars"></a>
+                                <a href="mess_send.php"><img src="img/avatars/ava-i.jpg" alt="avatars"></a>
                                 <p>
-                                    <a href="">Новых Сообщений - нет</a>
+                                    <a href="mess_send.php">Новых Сообщений - нет</a>
                                 </p>
                         </div>
                     </div>
