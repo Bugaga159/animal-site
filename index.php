@@ -14,13 +14,13 @@ require_once 'templates/header.php';
 <div class="container">
     <div class="main__wrapper">
         <section class="main__registration">
-            <form action="script/authController.php" method="POST" class="main__form">
+            <form action="app/authController.php" method="POST" class="main__form">
                 <li>
                     <ul><label for="login">Введите логин или почту</label></ul>
                     <ul><input id="login" name="login" type="text" placeholder="Логин"></ul>
                     <ul><label for="password">Пароль</label></ul>
                     <ul><input id="password" name="password" type="password" placeholder="Пароль"></ul>
-                    <ul><button>Войти</button></ul>
+                    <ul><button type="submite">Войти</button></ul>
                     <ul><a href="registration.php">Регистрация</a></ul>
                     
                 </li>

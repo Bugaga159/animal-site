@@ -1,7 +1,8 @@
 <?php
 
+// HEADER
 
-echo '
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +11,7 @@ echo '
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Flaffyland</title>
+    
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -20,9 +22,8 @@ echo '
                     <a href="index.php"><img src="img/logo-bg.png" alt="HOME" height=42 ></a>
                 </div>
                 <div class="header__btn_back">
-                    <a href="'. $btn[0] . '.php " class="btn btn-success">' . $btn[1] . '</a>
+                    <a href="<?php echo $btn[0] ?>.php " class="btn btn-success"><?php echo $btn[1]?></a>
                 </div>
             </div>
         </div>
     </header>
-';

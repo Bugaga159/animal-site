@@ -337,6 +337,7 @@ main nav {
 .profile__friends img {
     height: 50px;
     border-radius: 50%;
+    background-size: cover;
 }
 
 .profile__wall {
@@ -545,19 +546,63 @@ div#carousel {
     background-color: #fff;
  }
  .image__user {
-    display: flex;
-    -webkit-justify-content: center;
-            justify-content: center;
+  
     margin-top: 10px;
  }      
 
-#collage{ width: 600px;}
-#collage img{ display: block; float: left;}
-.clear{ *zoom: 1;}
-.clear:before,
-.clear:after { display: table; content: ""; line-height: 0;}
-.clear:after { clear: both;}
 
+
+.foto__profile ul{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.foto__profile img {
+    width: 120px;
+    height: 120px;
+}
+.hovergallery img{
+
+    height: 140px;
+    
+    -webkit-transform:scale(0.8); /*Webkit: уменьшаем размер до 0.8*/
+   
+    -moz-transform:scale(0.8); /*Mozilla: масштабирование*/
+    
+    -o-transform:scale(0.8); /*Opera: масштабирование*/
+    
+    -webkit-transition-duration: 0.5s; /*Webkit: длительность анимации*/
+    
+    -moz-transition-duration: 0.5s; /*Mozilla: длительность анимации*/
+    
+    -o-transition-duration: 0.5s; /*Opera: длительность анимации*/
+    
+    opacity: 0.7; /*Начальная прозрачность изображений*/
+    
+    margin: 0 10px 5px 0; /*Интервалы между изображениями*/
+    
+}
+    
+     
+    
+.hovergallery img:hover{
+    
+    -webkit-transform:scale(1.1); /*Webkit: увеличиваем размер до 1.2x*/
+    
+    -moz-transform:scale(1.1); /*Mozilla: масштабирование*/
+    
+    -o-transform:scale(1.1); /*Opera: масштабирование*/
+    
+    box-shadow:0px 0px 30px gray; /*CSS3 тени: 30px размытая тень вокруг всего изображения*/
+    
+    -webkit-box-shadow:0px 0px 30px gray; /*Webkit: тени*/
+    
+    -moz-box-shadow:0px 0px 30px gray; /*Mozilla: тени*/
+    
+    opacity: 1;
+    
+}
+    
 
 
 /*--------------------------------------MESSAGES--------------------------------------*/

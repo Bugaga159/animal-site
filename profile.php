@@ -1,10 +1,7 @@
 <?php
 
 $btn = ['index','Выход']; // Для кнопки в header
-
-
     include_once "config/connect.php";//Подключение к БД
-
     $user_id = $_REQUEST['id'];
     $select_query = "SELECT * FROM `users` WHERE  id = '{$user_id}'";
     $result = mysqli_query($link, $select_query);
@@ -15,29 +12,20 @@ $btn = ['index','Выход']; // Для кнопки в header
         $system_error_message = mysqli_error($link);
         header("Location: profile_error.php?error_message={$user_error_message}&system_error_message={$system_error_message}");
     exit();
-
-
     } else{
         
-
         $row =mysqli_fetch_array($result);
         $first_name = $row['first_name'];
         $last_name = $row['last_name'];
     }
-
-
-
 // подключение header
 require_once 'templates/header.php';
-
 echo '
-
     <main class="main__profile">
         <div class="container">
             <div class="main__profile__wrapper">';
             
 require_once 'templates/nav.php'; // подключение nav
-
 ?>              
                 <section class="profile__settings">
                     <div class="setting__wrapper">
@@ -81,7 +69,7 @@ require_once 'templates/nav.php'; // подключение nav
                 <section class="profile__wall">
                     <section class="wall__setting">
                         <ul>
-                            <li><?php echo $first_name . " " . $last_name?></li>
+                            <li><?php echo $first_name . " " . $last_name ?></li>
                             <li>Online</li>
                         </ul>
                         <hr>
@@ -92,20 +80,23 @@ require_once 'templates/nav.php'; // подключение nav
                     </section>
                     <section class="wall__foto">
                         <p>Фото домашних животных:</p>
-                        <div id="carousel">
-                            <figure id="spinner">
-                                <img src="img/pets_avatar/1.jpg" alt>
-                                <img src="img/pets_avatar/2.jpg" alt>
-                                <img src="img/pets_avatar/3.jpg" alt>
-                                <img src="img/pets_avatar/1.jpg" alt>
-                                <img src="img/pets_avatar/2.jpg" alt>
-                                <img src="img/pets_avatar/3.jpg" alt>
-                                <img src="img/pets_avatar/1.jpg" alt>
-                                <img src="img/pets_avatar/2.jpg" alt>
-                            </figure>
+                        <div class="foto__profile">
+                            <ul>
+                                <li>
+                                    <a href=""><img src="img/pets_avatar/1.jpg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="img/pets_avatar/2.jpg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="img/pets_avatar/3.jpg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="img/pets_avatar/1.jpg" alt=""></a>
+                                </li>
+                            </ul>
                         </div>
-                        <span style="float:left" class="ss-icon" onclick="galleryspin(\'-\')">&lt;</span>
-                        <span style="float:right" class="ss-icon" onclick="galleryspin(\'\')">&gt;</span>
+                    
                     </section>
                     <section class="wall__news">
                         <div class="news">
@@ -168,5 +159,4 @@ require_once 'templates/nav.php'; // подключение nav
 
 
     <?php
-
     require_once 'templates/footer.php'; // подключение footer

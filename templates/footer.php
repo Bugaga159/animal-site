@@ -1,5 +1,8 @@
 <?php
-echo '
+
+
+//FOOTER
+?>
     <footer class="footer">
             <div class="container">
                 <div class="footer__nav">
@@ -9,7 +12,8 @@ echo '
                 </div>            
             </div>
         </footer>
+        
         <script src="js/setting.js"></script>
+        
     </body>
     </html>
-';

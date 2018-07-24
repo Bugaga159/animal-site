@@ -17,39 +17,41 @@ require_once 'templates/nav.php'; // подключение nav
 echo '
                 <section class="main__image">
                 	<div class="image__user">
-                		
-	                	<div id="collage" class="clear">
-						    <img width="300" height="400" src="img/about-1.jpg" alt=""/>
-						    <img width="255" height="120" src="img/about-2.jpg" alt=""/>
-						    <img width="300" height="300" src="img/pets_avatar/1.jpg" alt=""/>
-						    <img width="425" height="222" src="img/pets_avatar/2.jpg" alt=""/>
-						    <img width="148" height="254" src="img/pets_avatar/3.jpg" alt=""/>
-						    <img width="456" height="321" src="img/pets_avatar/1.jpg" alt=""/>
-						    <img width="300" height="400" src="img/about-1.jpg" alt=""/>
-						    <img width="255" height="120" src="img/about-2.jpg" alt=""/>
-						    <img width="300" height="300" src="img/pets_avatar/1.jpg" alt=""/>
-						    <img width="425" height="222" src="img/pets_avatar/2.jpg" alt=""/>
-						    <img width="148" height="254" src="img/pets_avatar/3.jpg" alt=""/>
-						    <img width="456" height="321" src="img/pets_avatar/1.jpg" alt=""/>
-						    <img width="300" height="400" src="img/about-1.jpg" alt=""/>
-						    <img width="255" height="120" src="img/about-2.jpg" alt=""/>
-						    <img width="300" height="300" src="img/pets_avatar/1.jpg" alt=""/>
-						    <img width="425" height="222" src="img/pets_avatar/2.jpg" alt=""/>
-						    <img width="148" height="254" src="img/pets_avatar/3.jpg" alt=""/>
-						    <img width="456" height="321" src="img/pets_avatar/1.jpg" alt=""/>
-						    <img width="300" height="400" src="img/about-1.jpg" alt=""/>
-						    <img width="255" height="120" src="img/about-2.jpg" alt=""/>
-						    <img width="300" height="300" src="img/pets_avatar/1.jpg" alt=""/>
-						    <img width="425" height="222" src="img/pets_avatar/2.jpg" alt=""/>
-						    <img width="148" height="254" src="img/pets_avatar/3.jpg" alt=""/>
-						    <img width="456" height="321" src="img/pets_avatar/1.jpg" alt=""/>
-						    <img width="300" height="400" src="img/about-1.jpg" alt=""/>
-						    <img width="255" height="120" src="img/about-2.jpg" alt=""/>
-						    <img width="300" height="300" src="img/pets_avatar/1.jpg" alt=""/>
-						    <img width="425" height="222" src="img/pets_avatar/2.jpg" alt=""/>
-						    <img width="148" height="254" src="img/pets_avatar/3.jpg" alt=""/>
-						    <img width="456" height="321" src="img/pets_avatar/1.jpg" alt=""/>
+						<div class="hovergallery">
+						
+							<img src="img/about-1.jpg" />
+						
+							<img src="img/about-2.jpg" />
+						
+							<img src="img/pets_avatar/1.jpg" />
+						
+							<img src="img/pets_avatar/2.jpg" />
+						
+							<img src="img/pets_avatar/3.jpg" />
+						
+							<img src="img/about-1.jpg" />
+						
+							<img src="img/about-2.jpg" />
+						
+							<img src="img/pets_avatar/1.jpg" />
+						
+							<img src="img/pets_avatar/2.jpg" />
+						
+							<img src="img/pets_avatar/3.jpg" />
+							
+							<img src="img/about-1.jpg" />
+						
+							<img src="img/about-2.jpg" />
+						
+							<img src="img/pets_avatar/1.jpg" />
+						
+							<img src="img/pets_avatar/2.jpg" />
+						
+							<img src="img/pets_avatar/3.jpg" />
+						
 						</div>
+						
+	                	
 					</div>
                 </section>
             </div>
