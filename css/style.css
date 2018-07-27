@@ -75,6 +75,27 @@ li {
     color: red;
     font-size: 20px;
 }
+.error__ansver button {
+    width: 100%;
+    padding: 9px 0;
+    border: 0 solid;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #526ad5;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+.error__ansver input {
+    border-radius: 5px;
+    padding: 9px 0;
+    border: 0 solid;
+    margin-top: 10px;
+    text-align: center;
+}
+.registration__form .err_form {
+    margin-top: 10px;
+}
 /*-------------------------------------MAIN INDEX----------------------------------------*/
 main {
     flex: 1; /* если содержимое body меньше высоты окна, то main будет растянут до нужной величины */
@@ -165,16 +186,25 @@ main nav {
     margin-top: 30px;
     font-size: 20px;
 }
-.error {
-    margin-top: 20px;
+.error__mess {
+    margin-top: 70px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
-.error img {
+.error__mess h1 {
+    font-style: 24px;   
+}
+.error__mess img {
     width: 250px;
     margin-bottom: 30px;
+}
+.error__ansver {
+    padding: 10px;
+    background-color: #69c8fb;
+    border-radius: 5px;
 }
 /*-----------------------------------REGISTRATION PAGE--------------------------------*/
 .header__btn_back a {
@@ -688,7 +718,10 @@ div#carousel {
 .message__list h3{
     margin-left: 5px;
 }
-
+.message__ansver textarea{
+    width: 95%;
+    margin-top: 10px;    
+}
 /*-------------------------------------NEWS PROFILE-----------------------------------*/
 .news__profile {
     margin-top: 0;

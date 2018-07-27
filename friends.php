@@ -8,7 +8,7 @@ require_once 'templates/header.php';
 ?>
     <main class="main__profile">
         <div class="container">
-			<div class="main__profile__wrapper">';
+			<div class="main__profile__wrapper">
 <?php
 require_once 'templates/nav.php'; // подключение nav
 ?>

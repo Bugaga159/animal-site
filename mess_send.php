@@ -9,7 +9,7 @@ require_once 'templates/header.php';
 
     <main class="main__profile">
         <div class="container">
-            <div class="main__profile__wrapper">';
+            <div class="main__profile__wrapper">
 
   
 <?php          
@@ -46,6 +46,10 @@ require_once 'templates/nav.php'; // подключение nav
                             <p>ОК, в 22-00 около меня</p>
                             <span>24/07/18 в 21:35</span>
                         </div>
+                    </div>
+                    <div class="message__ansver">
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <button class="btn__back">Отправить</button>
                     </div>
                 </section>
             </div>
