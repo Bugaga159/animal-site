@@ -69,6 +69,12 @@ li {
 .header__btn a:hover {
     background-color: #899ae4;
 }
+
+
+.error_message {
+    color: red;
+    font-size: 20px;
+}
 /*-------------------------------------MAIN INDEX----------------------------------------*/
 main {
     flex: 1; /* если содержимое body меньше высоты окна, то main будет растянут до нужной величины */
@@ -742,7 +748,7 @@ div#carousel {
 /*---------------------------------------GROUP PAGE ----------------------------------*/
 .group {
     margin-left: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     background: #69c8fb;
     border-radius: 5px;
     padding: 10px;
@@ -796,6 +802,18 @@ div#carousel {
     text-align: center;
 }
 
+.group__mess .news {
+    background: #fff;
+    margin-top: 30px;
+}
+.group__mess .news *{
+    margin-bottom: 10px;
+}
+.group__mess .news img {
+    height: 300px;
+    float: left;
+    margin: 5px 30px 5px 5px;
+}
 .group__item ul {
     display: flex;
     justify-content: space-around;

@@ -27,7 +27,7 @@ require_once 'templates/header.php';
                <div class="error">
                     <h1>Нам очень жаль...</h1>
                     <img src="img/error.png" class="error" alt="">
-                    <p>  ... но произошел небольшой сбой. Вероятно,<span class="error_message"><?php echo $error_message; ?></span></p>
+                    <p>  ... но произошел небольшой сбой. Вероятно, <span class="error_message"><?php echo $error_message; ?></span></p>
                     <p>
                     Не волнуйтесь, мы в курсе происходящего и предпримем все необходимые меры.
                         Если же вы хотите связаться с нами и узнать подробности произошедшего или

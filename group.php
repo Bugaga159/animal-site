@@ -33,8 +33,8 @@ require_once 'templates/nav.php'; // подключение nav
                         <div class="group__item">
                             <ul>
                                 <li><a href="">Подписанные</a></li>
-                                <li><a href="">Обсуждение</a></li>
-                                <li><a href="">Фото</a></li>
+                                <li><a href="mess_send.php">Обсуждение</a></li>
+                                <li><a href="image_user.php">Фото</a></li>
                                 <li><a href="">Товары</a></li>
                             </ul>
                         </div>
@@ -59,8 +59,7 @@ require_once 'templates/nav.php'; // подключение nav
                             <div class="news">
                                 <h1>Преданные животные</h1>
                                 <hr>
-                                <img src="img/pets_avatar/1.jpg" alt="">
-                                <p>                                
+                                <p><img src="img/pets_avatar/1.jpg" alt="">                                
                                     Lorem ipsum dolor sit amet consectetur 
                                     adipisicing elit. Voluptatum error temporibus
                                     impedit officiis vero beatae dolores veniam 
@@ -95,8 +94,8 @@ require_once 'templates/nav.php'; // подключение nav
                             <div class="news">
                                 <h1>Преданные животные</h1>
                                 <hr>
-                                <img src="img/pets_avatar/1.jpg" alt="">
-                                <p>                                
+                                
+                                <p><img src="img/pets_avatar/1.jpg" alt="">                                
                                     Lorem ipsum dolor sit amet consectetur 
                                     adipisicing elit. Voluptatum error temporibus
                                     impedit officiis vero beatae dolores veniam 

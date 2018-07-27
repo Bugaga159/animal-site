@@ -13,8 +13,8 @@ $log_conrt = "SELECT id , password FROM `users` WHERE login LIKE '{$login}'";
 $res_contr = mysqli_query($link,$log_conrt ) or errorHelperRedirect("возникла проблема, связанная с подключением к базе данных, содержащей нужную информацию."," не найден пользователь!"); 
 $data = mysqli_fetch_assoc($res_contr);
 	if($data['id'] == 0){
-		$errors = "Логин не существует !";
-		echo $errors;
+		$error = "Логин не существует !";
+		
 	}
 
 if (password_verify($pass, $data['password'])) {
@@ -27,6 +27,6 @@ if (password_verify($pass, $data['password'])) {
 }
 else {
 
-	header("Location: ../profile_error.php");
+	header("Location: ../profile_error.php?error_message={$error}");
 }
 	?>
