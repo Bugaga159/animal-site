@@ -5,14 +5,14 @@ $btn = ['index','Выход']; // Для кнопки в header
 // подключение header
 require_once 'templates/header.php';
 
-echo '
+?>
     <main class="main__profile">
         <div class="container">
 			<div class="main__profile__wrapper">';
-
+<?php
 require_once 'templates/nav.php'; // подключение nav
-
-echo '			 
+?>
+			 
                 <section class="friends">
                 	<div class="friends__list">
                 		<ul>
@@ -199,6 +199,6 @@ echo '
             </div>
         </div> 
 	</main>
-';
+<?php
 
 require_once 'templates/footer.php'; // подключение footer

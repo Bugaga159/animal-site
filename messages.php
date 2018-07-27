@@ -13,7 +13,7 @@ echo '
 
 require_once 'templates/nav.php'; // подключение nav
 
-echo '
+?>
                 
                 <section class="main__messages">
                     <div class="messages__search">
@@ -53,6 +53,6 @@ echo '
     </main>
 
 
-    ';
+  <?php
 
     require_once 'templates/footer.php'; // подключение footer

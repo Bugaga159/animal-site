@@ -801,18 +801,23 @@ div#carousel {
     justify-content: space-around;
     
 }
-.group__item a {
-    display: block;
+.group__item li{
     width: 100%;
     list-style: none;
     color: #000;
     background: #fff;
     padding-top: 10px;
     padding-bottom: 10px;
+    text-align: center;
 }
-.group__item a:hover,
-.group__item a:focus {
+.group__item li:hover,
+.group__item li:focus {
     background-color: #899ae4;
+}
+.group__item a{
+    color: #000;
+    
+    
 }
 
 /*-------------------------------------FOOTER-----------------------------------------*/
