@@ -1,5 +1,6 @@
 <?php
 
+//require_once "config/app_init.php";
 // HEADER
 
 ?>

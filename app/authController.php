@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 
 include_once "../config/connect.php";
 	
@@ -18,11 +18,14 @@ $data = mysqli_fetch_assoc($res_contr);
 	}
 
 if (password_verify($pass, $data['password'])) {
-
-	session_start();
+	$_SESSION['userid'] = $data['id'];
+	
+	// var_dump ($_SESSION);
 	//Если все хорошо, идем дальше
 		
-	header("Location: ../profile.php?id=" . $data['id']);
+	//подключение сессии
+
+	header("Location: ../profile.php");
 	exit();
 }
 else {

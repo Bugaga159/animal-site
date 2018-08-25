@@ -2,6 +2,8 @@ AddDefaultCharset UTF-8
 
 RewriteEngine on
 
+Options All +Indexes
+
 #1)externally redirect "/file.php" to "/file"   
 RewriteCond %{THE_REQUEST} /([^.]+)\.php [NC]
 #RewriteRule ^ /%1 [NC,L,R]

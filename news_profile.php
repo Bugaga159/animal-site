@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 $btn = ['index','Выход']; // Для кнопки в header
 
 // подключение header

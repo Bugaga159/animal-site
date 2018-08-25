@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 
 
 $btn = ['registration','Регистрация'];// Для кнопки в header

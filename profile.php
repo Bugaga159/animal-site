@@ -1,30 +1,20 @@
 <?php
-
+session_start();
 $btn = ['index','Выход']; // Для кнопки в header
-    include_once "config/connect.php";//Подключение к БД
-    $user_id = $_REQUEST['id'];
-    $select_query = "SELECT * FROM `users` WHERE  id = '{$user_id}'";
-    $result = mysqli_query($link, $select_query);
-    if(!$result){
-       
-        $user_error_message = "возникла проблема, связанная с подключением " .
-            "к базе данных, содержащей нужную информацию.";
-        $system_error_message = mysqli_error($link);
-        header("Location: profile_error.php?error_message={$user_error_message}&system_error_message={$system_error_message}");
-    exit();
-    } else{
-        
-        $row =mysqli_fetch_array($result);
-        $first_name = $row['first_name'];
-        $last_name = $row['last_name'];
-    }
+
+require_once 'app/sess.php';
+
+$first_name = $_SESSION['first_name'];
+$last_name = $_SESSION['last_name'];
+var_dump ($_SESSION);
+
 // подключение header
 require_once 'templates/header.php';
-echo '
+?>
     <main class="main__profile">
         <div class="container">
-            <div class="main__profile__wrapper">';
-            
+            <div class="main__profile__wrapper">
+<?php            
 require_once 'templates/nav.php'; // подключение nav
 ?>              
                 <section class="profile__settings">

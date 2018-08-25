@@ -1,23 +1,23 @@
 <?php
-
+session_start();
 $btn = ['index','Выход']; // Для кнопки в header
 
 // подключение header
 require_once 'templates/header.php';
 
-echo '
+?>
 
     <main class="main__profile">
         <div class="container">
-            <div class="main__profile__wrapper">';
-
+            <div class="main__profile__wrapper">
+<?php
 require_once 'templates/nav.php'; // подключение nav
 
-echo '
+?>
                 <section class="main__changes">
 	                    <div class="change__list">
 	                    	<form action="">
-	                    		<h1>Изменить учетные данные:</h1>
+	                    		<h1>Изменить учетные данные <?=$_SESSION['first_name'] . " " . $_SESSION['last_name'];?> :</h1>
 			                    <div class="form-group first_name">
 			                        <p><label for="first_name">Имя:</label></p>
 			                        <input type="text" name = "first_name" class="form-control first_name" placeholder="Введите Имя">                            
@@ -52,6 +52,6 @@ echo '
     </main>
 
 
-    ';
+   <?php
 
     require_once 'templates/footer.php'; // подключение footer
